@@ -11,7 +11,7 @@ jobs:
       - name: apache script
         run: |
           sudo apt-get update -y
-          sudo apt-get install httpd -y
-          sudo systemctl start httpd
-          sudo systemctl status httpd
-          sudo systemctl restart httpd
+          sudo apt-get install apache2 -y
+          sudo systemctl start apache2
+          sudo systemctl status apache2
+          sudo systemctl restart apache2
