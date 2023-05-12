@@ -9,4 +9,9 @@ jobs:
       - name: another world print
         run: echo "another world print by me"
       - name: apache script
-        run: sudo apt-get update -y
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install httpd -y
+          sudo systemctl start httpd
+          sudo systemctl status httpd
+          sudo systemctl restart httpd
