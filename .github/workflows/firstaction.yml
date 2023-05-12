@@ -9,7 +9,7 @@ jobs:
       - name: another world print
         run: echo "another world print by me"
       - name: apache script
-        run: apt-get update -y
-        run: apt-get install httpd -y
-        run: systemctl start httpd
-        run: systemctl status httpd
+      - run: apt-get update -y
+      - run: apt-get install httpd -y
+      - run: systemctl start httpd
+      - run: systemctl status httpd
